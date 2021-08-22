@@ -1,20 +1,3 @@
-/*Resetando css*/
-html,
-body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background: var(--background);
-}
-
-:root {
-    --background: #e2e8f0;
-    --header: #feb2b2;
-    --main: #fbd38d;
-    --aside: #faf089;
-    --footer: #9ae6b4;
-}
-
 /*Iniciando Grid*/
 .container {
     display: grid;
