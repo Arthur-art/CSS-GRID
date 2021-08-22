@@ -15,37 +15,42 @@ body {
     --footer: #9ae6b4;
 }
 
+/*Iniciando Grid*/
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 20vh 20vh 20vh 20vh;
+    grid-row-gap: 2rem;
+}
+
 header {
     background: var(--header);
-    height: 100px;
+    height: 100%;
     text-align: center;
-    grid-column-start: 1;
-    grid-column-end: 3;
+    grid-column: 1/4;
+    grid-row: 1/2;
 }
 
 main {
     background: var(--main);
-    height: 100px;
+    height: 100%;
     text-align: center;
+    grid-column-start: 2;
+    grid-column-end: 3;
 }
 
 aside {
     background: var(--aside);
-    height: 100px;
+    height: 100%;
     text-align: center;
+    grid-column-start: 2;
+    grid-column-end: 3;
 }
 
 footer {
     background: var(--footer);
-    height: 100px;
+    height: 100%;
     text-align: center;
-}
-
-/*Iniciando Grid*/
-.container {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: 20vh 70vh 10vh;
-    grid-row-gap: 0.1rem;
-    grid-column-gap: 1rem;
+    grid-column-start: 1;
+    grid-column-end: 4;
 }
