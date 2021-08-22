@@ -18,12 +18,13 @@ body {
 /*Iniciando Grid*/
 .container {
     display: grid;
-    grid-template-columns: 4fr 1fr;
-    grid-template-rows: 20vh 70vh 20vh;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 20vh 20vh 40vh;     
     grid-template-areas:
-        "header header"
-        "main aside"
-        "footer footer";
+        "header header header"
+        ". main aside"
+        "footer footer footer";
+    grid-row-gap: 1rem;
 }
 
 header {
