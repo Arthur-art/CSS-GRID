@@ -19,6 +19,8 @@ header {
     background: var(--header);
     height: 100px;
     text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 3;
 }
 
 main {
@@ -42,5 +44,8 @@ footer {
 /*Iniciando Grid*/
 .container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 20vh 70vh 10vh;
+    grid-row-gap: 0.1rem;
+    grid-column-gap: 1rem;
 }
