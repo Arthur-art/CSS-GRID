@@ -18,39 +18,46 @@ body {
 /*Iniciando Grid*/
 .container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 20vh 20vh 20vh 20vh;
-    grid-row-gap: 2rem;
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: 20vh 70vh 20vh;
+    grid-template-areas:
+        "header header"
+        "main aside"
+        "footer footer";
 }
 
 header {
     background: var(--header);
-    height: 100%;
+
     text-align: center;
-    grid-column: 1/4;
-    grid-row: 1/2;
+    grid-area: header;
+    /* grid-column: 1/4;
+    grid-row: 1/2; */
 }
 
 main {
     background: var(--main);
-    height: 100%;
+
     text-align: center;
-    grid-column-start: 2;
-    grid-column-end: 3;
+    grid-area: main;
+    /* grid-column-start: 2;
+    grid-column-end: 3; */
 }
 
 aside {
     background: var(--aside);
-    height: 100%;
+
     text-align: center;
-    grid-column-start: 2;
-    grid-column-end: 3;
+    grid-area: aside;
+    /* grid-column-start: 2;
+    grid-column-end: 3; */
 }
 
 footer {
     background: var(--footer);
-    height: 100%;
+
     text-align: center;
-    grid-column-start: 1;
-    grid-column-end: 4;
+    grid-area: footer;
+    /* grid-column-start: 1;
+    grid-column-end: 4; */
 }
